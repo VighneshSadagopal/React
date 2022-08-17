@@ -1,0 +1,36 @@
+.Form-Element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background-color: #8400ff;
+  width: 80%;
+  height: auto;
+align-items: center;
+}
+.Form-Element input{
+    margin: 20px 5px;
+  }
+
+.Form-Element .textbox{
+width: 40%;
+height: 20px;
+}
+.submit{
+    background-color: #fbc561;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.Form-Result {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    background-color: #8400ff;
+    width: 80%;
+    height: auto;
+  align-items: center;
+  }
