@@ -1,0 +1,25 @@
+.product
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    text-align: left;
+    border: 1px solid black;
+    margin: 10px 2px;
+    padding: 10px 10px;
+}
+.product .product-info
+{
+    display: flex;
+    flex-direction: column;
+   
+}
+label
+{
+    margin-top: 20px;
+}
+select,input{
+    width: 40%;
+    height: 2rem;
+}
