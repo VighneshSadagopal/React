@@ -1,0 +1,28 @@
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #666;
+    padding: 5rem 0rem 4rem 0rem;
+}
+.body1{
+    display: block;
+    font-size: 12px;
+    color: #ccc;
+    line-height: 20px;
+}
+a{
+    color: #ccc;
+}
+.cc-footer {
+    display: flex;
+}
+.cs-logo{
+    padding: 1rem;
+}
+.cs-logo svg{
+    font-size: 3rem;
+}
+.cs-container h4 {
+    font-size: 14px;
+    width: 75%;
+}

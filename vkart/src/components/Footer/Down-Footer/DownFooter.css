@@ -1,0 +1,29 @@
+.legaltext {
+    color: #ccc;
+    font-size: 12px;
+    padding: 0px 2rem;
+}
+.legaltext a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ccc;
+}
+.legaltext .copyright {
+    font-weight: 300;
+    display: inline-block;
+}
+.legaltext a::before {
+    content: "|";
+    color: #666;
+    margin-right: 6px;
+    margin-left: 3px;
+}
+
+.down-footer{
+    display: flex;
+    padding: 3rem 0rem 0rem 0rem;
+    align-items: center;
+}
+.down-footer img{
+    width: 17%;
+}

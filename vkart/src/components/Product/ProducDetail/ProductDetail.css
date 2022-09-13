@@ -1,0 +1,13 @@
+.main-container{
+    display: flex;
+    width: 100%;
+}
+.left-container{
+    width: 40%;
+}
+.left-container .image{
+    width: 60%;
+}
+.right-container{
+    width: 60%;
+}
