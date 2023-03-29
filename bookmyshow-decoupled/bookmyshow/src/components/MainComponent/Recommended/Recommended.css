@@ -1,0 +1,34 @@
+.recommended-movies{
+    width: 93%;
+    margin-left: 2.5rem;
+}
+.recommended-movies h2{
+    width: fit-content;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    font-size: 23px;
+}
+.recommended-movies .slick-slide {
+    display: grid;
+    justify-content: center;
+   
+}
+.card img{
+    width: 222px;
+    height: 378px;
+    border-radius: 10px;
+}
+.title-genre h2{
+    margin: 1rem 0px 4px;
+    word-break: break-word;
+    color: rgb(34, 34, 34);
+    font-family: Roboto ,sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.33;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

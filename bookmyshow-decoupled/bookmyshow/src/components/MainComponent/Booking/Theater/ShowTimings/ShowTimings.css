@@ -1,0 +1,19 @@
+.showtimings{
+    margin: 1rem;
+    background-color: white;
+ 
+}
+.showtimings .avialibilty-status-label{
+    color: #717171;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.avialable{
+    border-bottom: 1px solid #f2f2f2;;
+    padding-bottom: 12px;
+    padding: 1rem;
+}
