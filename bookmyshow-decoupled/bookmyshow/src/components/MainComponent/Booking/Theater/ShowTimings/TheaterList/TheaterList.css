@@ -1,0 +1,79 @@
+.theater-card li{
+  list-style: none;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+ul.theater-card {
+    padding: 0px;
+}
+.icons .m-ticket{
+    display: flex;
+    align-items: center;
+}
+.icons .food-bev{
+    display: flex;
+    align-items: center;
+}
+.icons .m-ticket p{
+    color: green;
+}
+.icons .food-bev p{
+    color: orange;
+}
+
+.theater-info{
+    display: flex;
+    margin-left: 1rem;
+    width: 23%;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+    width: 14rem;
+}
+.theater-card .info{
+    display: flex;
+    color: #7D7D7D;
+}
+.left-info h3{
+    font-size: 12px;
+    margin-left: 4px;
+}
+.theater-card .info p{
+    margin: 0;
+    color: #7D7D7D;
+    font-size: 11px;
+}
+button.favicon{
+    padding: 0;
+    background: transparent;
+    border: none;
+    height: 1.5rem;
+    cursor: pointer;
+
+}
+.timings-button-list button{
+    background-color: transparent;
+    padding: 0.8rem 2rem;
+    border: 1px solid rgb(153,153,153);
+    font-size: 11px;
+   border-radius: 4px;
+   margin: 0.5rem 0.5rem;
+}
+.timings-button-list button a{
+    color: green;
+    text-decoration: none;
+}
+.left-contain{
+    display: flex;
+}
+.timings-button-list{
+    padding-left: 1rem;
+}

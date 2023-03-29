@@ -1,0 +1,386 @@
+
+.main-container{
+    font-family: sans-serif;
+}
+.banner{
+    width: 1366px;
+    height: 33rem;
+   background-position: right;
+   background-repeat: no-repeat;
+}
+.trailer-clip{
+    width: 261px;
+    height: 416px;
+    overflow: hidden;
+    flex-shrink: 0;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    
+}
+.banner-container{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 1240px;
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.trailer-clip img{
+    height: 100%;
+    width: 100%;
+}
+.trailer-clip label{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+
+}
+.trailer-clip .trailer-label{
+    cursor: pointer;
+    z-index: 1;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    background: rgba(34, 34, 34, 0.8);
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 8px;
+    border-radius: 24px;
+    padding: 4px 8px;
+    color: white;
+}
+.release-status span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.release-status{
+    background: rgb(0, 0, 0);
+    border-radius: 0px 0px 16px 16px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    padding: 4px 8px;
+    width: 19.75%;
+    position: absolute;
+}
+.movie-info{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding-left: 32px;
+    max-width: 520px;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.movie-info h1{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+    margin-bottom: 0;
+}
+.movie-ratings{
+    cursor: pointer;
+    padding: 0px;
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.movie-ratings .rate-percent{
+    letter-spacing: 0.2px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    padding: 2px 0px 0px 8px;
+}
+.movie-ratings .rate-rating{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: rgb(255, 255, 255);
+    padding: 4px 0px 0px 8px;
+}
+.movie-review{
+    border-top: none;
+    padding: 0px;
+}
+.movie-review .review-rate{
+    border-radius: 8px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    padding: 12px 24px;
+    margin: 16px 0px 0px;
+    max-width: 419px;
+    cursor: pointer;
+    background-color: rgb(51, 51, 51);
+}
+.movie-review .review-rate .review-message{
+    max-width: 75%;
+    font-size: 16px;
+}
+.movie-review .review-rate .review-message h5{
+    letter-spacing: 0.2px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0px;
+
+}
+.movie-review .review-rate .review-message h6{
+    padding-top: 2px;
+    color: rgb(204, 204, 204);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0px;
+}
+button.rate-button{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    margin-left: 4px;
+    padding: 8px 12px;
+    border: none;
+    color: rgb(51, 51, 51);
+}
+button.rate-button span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.movie-format-language{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.movie-format-language .format-type{
+    text-transform: uppercase;
+}
+.c-style{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(229, 229, 229);
+    color: rgb(0, 0, 0);
+    padding: 2px 8px;
+    border-radius: 2px;
+    align-self: flex-start;
+    margin-top: 8px;
+    text-transform: capitalize;
+}
+.movie-format-language .c-style:first-child {
+    margin-right: 8px;
+}
+.genre-time{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    max-width: 448px;
+    text-transform: capitalize;
+}
+.button-book{
+    padding: 0px;
+    border: 1px solid rgb(248, 68, 100);
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 8px;
+    width: 13.375rem;
+    height: 3.063rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px;
+}
+.rate-like{
+    letter-spacing: 0.2px;
+    padding-left: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+}
+.rate-message{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    padding: 2px 0px 0px 8px;
+}
+.review-release{
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: none;
+    border: 1px solid rgb(255, 255, 255);
+    width: 400px;
+}
+.review-release .release-message{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    max-width: 69%;
+}
+.review-release .release-message h3{
+    letter-spacing: 0.2px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+.review-release .release-message h4{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    padding-top: 2px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+.interested-button{
+    cursor: pointer;
+    color: rgb(248, 68, 100);
+    border-radius: 2px;
+    background-color: rgb(242, 245, 249);
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    padding: 8px 12px;
+    border: 0px;
+}
+.interested-button span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: rgb(43, 49, 72);
+}
+.second-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 1240px;
+    margin: 0px auto;
+    width: 92%;
+}
+.second-container .about-movie{
+    padding: 32px 0px;
+    border-top: 1px solid rgb(229, 229, 229);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.second-container .about-movie h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+.second-container .about-movie span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: rgb(51, 51, 51);
+    padding-top: 16px;
+    width: 57.87rem;
+    
+}
+.head-modal h4{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    margin: 0;
+}
+.head-modal h3{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-top: 2px;
+    margin: 0;
+}
+.head-center .language{
+    background: rgb(242, 245, 249);
+    padding: 12px 16px;
+    margin-bottom: 0.2rem;
+}
+.head-center .cntrmanage{
+    margin-top: 1rem;
+}
+.head-center .cntrbutton{
+    display: flex;
+    padding-bottom: 11px;
+    flex-wrap: wrap;
+}
+.head-center .cntrbutton .format-button{
+    min-width: 64px;
+    margin: 16px 0px 0px 16px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 16px;
+    padding: 8px 12px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: rgb(220, 53, 75);
+}

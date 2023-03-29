@@ -1,0 +1,43 @@
+.date-container{
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 3px 0px;
+    border-radius: 8px;
+    
+}
+.date-container p,h3{
+    margin: 0;
+}
+.date-container h3{
+    font-size: 16px;
+    margin: 5px 0px;
+}
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + .date-container {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + .date-container{
+    background-color: #f84464;
+    color: white;
+  }
+  .datebutton{
+    background-color: transparent;
+    border: none;
+  }
+
+.date-select{
+    background-color: white;
+}

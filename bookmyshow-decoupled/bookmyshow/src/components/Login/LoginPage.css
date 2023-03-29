@@ -1,0 +1,31 @@
+form#login {
+    width: fit-content;
+    background: white;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    margin: 5rem 35%;
+    justify-content: space-evenly;
+}
+form#login input{
+    padding: 7px 24px;
+    margin-bottom: 0.4rem;
+}
+.login-page{
+    min-height: 75vh;
+}
+button.submit{
+    margin-top: 2rem;
+    padding: 0.7rem;
+    color: white;
+    background: #f84464;
+    border: transparent;
+}
+img.logoimage{
+    background: darkslategrey;
+    border: none;
+    width: 8rem;
+    padding: 0.2rem 3.2rem;
+    margin-bottom: 1rem;
+}

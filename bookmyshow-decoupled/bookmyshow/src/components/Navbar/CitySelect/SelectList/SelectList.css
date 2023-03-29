@@ -1,0 +1,26 @@
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img{
+outline: 1px solid black;
+  }
+
+  .selectlist h3{
+    font-size: 14px;
+    max-width: 110px;
+    word-break: break-word;
+    text-align: center;
+    color: rgb(51, 51, 51);
+  }
+  
