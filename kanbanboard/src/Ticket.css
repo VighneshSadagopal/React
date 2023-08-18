@@ -1,0 +1,51 @@
+/* Ticket.css */
+
+.ticket {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.ticket-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.ticket-status {
+  font-size: 0.9rem;
+  color: #4caf50; /* Green color for "Done" */
+}
+
+.ticket-user {
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+.ticket-done {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.ticket-done label {
+  margin-right: 5px;
+}
+
+.ticket-done input[type="checkbox"] {
+  margin-right: 3px;
+}
+
+.ticket.priority-1 {
+  background-color: #ffe0b2; /* Light orange background for priority 1 */
+}
+
+.ticket.priority-2 {
+  background-color: #bbdefb; /* Light blue background for priority 2 */
+}
