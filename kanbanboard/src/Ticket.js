@@ -62,6 +62,7 @@ const Ticket = ({ ticket, groupBy, updateTicketStatus,users }) => {
       <div className="ticket-title">{ticket.title}</div>
       <div className="ticket-status">{ticket.status}</div> 
       <div className="ticket-user">{users[users.findIndex(element => element.id ===ticket.userId)].name}</div>
+      <div className='id'>{ticket.id}</div>
       {groupBy === 'user' && (
         <div className="ticket-done">
           Done{' '}

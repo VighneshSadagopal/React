@@ -23,20 +23,61 @@ const KanbanBoard = ({ tickets,users }) => {
       Done: [],
       Cancelled: [],
     };
+  
+    const userGroup = {};
+    users.forEach(status => {
+      userGroup[status.name] = [];
+    });
+
+    const priorityGroup = {
+      'No Priority': [],
+      Low: [],
+      Medium: [],
+      High: [],
+      Urgent: [],
+    };
     tickets.forEach(ticket => {
       const status = ticket.status || '';
-
-
-      if (status === 'Done') {
-        grouped.Done.push(ticket);
-      } else if (status === 'In progress') {
-        grouped.InProgress.push(ticket);
-      } else if (grouped[status]) {
-        grouped[status].push(ticket);
+      const userId = ticket.userId || '';
+      const priority = ticket.priority || 0;
+      if (groupBy === 'status') {
+        if (status === 'Done') {
+          grouped.Done.push(ticket);
+        } else if (status === 'In progress') {
+          grouped.InProgress.push(ticket);
+        } else if (grouped[status]) {
+          grouped[status].push(ticket);
+        }
+        setGroupedTickets(grouped);
+      } else if (groupBy === 'user') {
+        const name = users[users.findIndex(element => element.id ===userId)].name
+          if (userGroup[name]) {
+            userGroup[name].push(ticket);
+          }
+        
+        setGroupedTickets(userGroup);
+      } else if (groupBy === 'priority') {
+        console.log(ticket.priority);
+        if (priority === 1) {
+          priorityGroup['Low'].push(ticket);
+        }
+        else if (priority === 2) {
+          priorityGroup['Medium'].push(ticket);
+        }
+        else if (priority === 3) {
+          priorityGroup['High'].push(ticket);
+        }
+        else if (priority === 4) {
+          priorityGroup['Urgent'].push(ticket);
+        }
+        else if (priority === 0){
+          priorityGroup['No Priority'].push(ticket);
+        }
+        setGroupedTickets(priorityGroup);
       }
     });
 
-    setGroupedTickets(grouped);
+    
   }, [tickets, groupBy]);
 
   const updateTicketStatus = (ticketId, isDone) => {
